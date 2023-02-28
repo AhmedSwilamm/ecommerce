@@ -28,9 +28,9 @@ body{
     margin-left:30px;
     margin-top:4px;
 }
-.custom-btn , .custom-navbar .container .custom-form-control{
-    border: 1px solid #EBEBEB !important;
-    box-shadow: none ;
+.custom-btn ,.custom-form-control{
+    border: 1px solid #EBEBEB;
+    box-shadow: none;
     border-radius: 2px;
     font-size: 14px;
     transition: all 0.3s ease;
@@ -619,6 +619,111 @@ Product page
 }
 
 
+/************************************************
+*******************
+checkout page
+*******************
+*************************************************/
+.custom-table{
+    width: 100%;
+}
+h1.custom-heading{
+    font-size:36px;
+    margin:25px 0;
+}
+.custom-table .custom-media img{
+    width:80px;
+    height:80px;
+    border:1px solid #ebebeb;
+    margin-left:10px;
+}
+.custom-table .custom-media h4{
+    font-size:18px;
+    margin:12px 0;
+}
+.custom-table .quantity{
+    width:56px;
+    height:34px !important;
+    padding:0 8px;
+    text-align:center;
+    margin:0 auto;
+}
+.custom-table th, .custom-table td{
+    padding:15px;
+    font-size:120%;
+    vertical-align:middle;
+    border-bottom:1px solid #ebebeb;
+    border-top:1px solid #ebebeb;
+}
+.custom-table th:first-child, .custom-table td:first-child{
+    width:50%;
+}
+.custom-table td:not(:first-child), .custom-table th:not(:first-child){
+    text-align:center;
+}
+.custom-table th{
+    color:#c2c2c2;
+    font-weight:400;
+}
+.custom-btn-danger{
+    color:#ff3956 !important;
+    border-color:#ff3956 !important;
+    background-color:transparent !important;
+    border-radius: 3px;
+}
+.custom-btn-danger:active,
+.custom-btn-danger:active:focus,
+.custom-btn-danger:active:hover,
+.custom-btn-danger:focus,
+.custom-btn-danger:hover{
+    color:#b9001b !important;
+    border-color:#b9001b !important;
+    background-color:transparent !important;
+}
+.custom-table .custom-media{
+    margin-left:15px;
+    margin-right:15px;
+    margin-bottom:15px;
+}
+.custom-table th:first-child{
+    padding-right: 20px;
+}
+.custom-table tfoot td{
+    border-bottom:none;
+    font-size:150%;
+}
+.custom-table .total-price *{
+    color:#000;
+}
+.custom-table .total-price .custom-text-muted .custom-text-muted{
+    color:#a9a9a9;
+}
+
+
+/************************************************
+*******************
+payment page
+*******************
+*************************************************/
+.custom-input-details{
+    border-width:2px !important;
+    border-radius:3px !important;
+    height:46px !important;
+    padding:0 16px !important;
+    font-size:18px !important;
+    width:98% !important;
+}
+.custom-form-control:focus{
+    border-color:#b86d07 !important;
+    box-shadow:0 0 2px 0 #b86d07 !important;
+}
+#credit-card-info{
+    margin-right:3%;
+}
+
+
+
+
 
 
 
@@ -764,6 +869,7 @@ Media Query
     #newsletter form .input-group{
         width:100%;
     }
+    /* checkout page */
     .hide-on-small{
         display:none;
     }
